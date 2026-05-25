@@ -64,7 +64,7 @@ git pull
 
 Pode ser que depois de uma atualização novas dependências tenham sido adicionadas, logo
 será necessário instalar as novas dependências. É possível monitorar isso pela data de edição do 
-arquivo `requirements.txt`. Caso tenha sido editado antes depois da última atualização, execute:
+arquivo `requirements.txt`. Caso tenha sido editado depois da última atualização, execute:
 ```bash
 # Ubuntu / Debian / MacOS
 pip3 install -r requirements.txt
