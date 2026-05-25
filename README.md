@@ -54,4 +54,10 @@ Para visualizar as análises ativas, execute:
 streamlit run main.py
 ```
 
+Conforme o projeto avança, você precisará baixar as atualizações mais recentes. Para fazer isso, abra o terminal e execute:
+
+```bash
+cd clustering_parana
+git pull
+
 
