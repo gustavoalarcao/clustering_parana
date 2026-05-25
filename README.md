@@ -2,7 +2,7 @@
 
 Este projeto usa a versão Python 3.12.3 .
 
-Clone o repositório:
+Clone o repositório (é necessário ter o Git instalado no computador):
 ```bash
 git clone https://github.com/gustavoalarcao/clustering_parana
 ```
@@ -64,7 +64,7 @@ git pull
 
 Pode ser que depois de uma atualização novas dependências tenham sido adicionadas, logo
 será necessário instalar as novas dependências. É possível monitorar isso pela data de edição do 
-arquivo `requirements.txt`. Caso tenha sido editado antes depois da última atualização, execute:
+arquivo `requirements.txt`. Caso tenha sido editado depois da última atualização, execute:
 ```bash
 # Ubuntu / Debian / MacOS
 pip3 install -r requirements.txt
