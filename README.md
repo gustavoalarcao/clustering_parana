@@ -2,7 +2,7 @@
 
 Este projeto usa a versão Python 3.12.3 .
 
-Clone o repositório:
+Clone o repositório (é necessário ter o Git instalado no computador):
 ```bash
 git clone https://github.com/gustavoalarcao/clustering_parana
 ```
