@@ -1,7 +1,7 @@
 import requests
 
 
-import utils.constantes as cte
+import clustering_parana.utils.estilos as cte
 
 
 

@@ -4,14 +4,13 @@ import numpy as np
 
 
 
-def coletando_ocorrencias_de_desastres(filepath) -> pd.DataFrame:
-    df = pd.read_csv(
-        filepath, 
+def coletando_ocorrencias_de_desastres(caminho) -> pd.DataFrame:
+    return pd.read_csv(
+        caminho, 
         sep=';', 
         thousands='.', 
         decimal=','
     )
-    return df
 
 
 

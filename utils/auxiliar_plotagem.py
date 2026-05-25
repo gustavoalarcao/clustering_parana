@@ -1,9 +1,11 @@
+from pathlib import Path
+
+
 import plotly.graph_objects as go
 import streamlit as st
 
-from pathlib import Path
 
-import utils.constantes as cte
+import utils.estilos as est
 
 
 
@@ -11,8 +13,8 @@ import utils.constantes as cte
 def baixar_grafico( 
         plot: go.Figure, 
         filename: str, 
-        width: int=cte.largura,
-        height: int=cte.altura, 
+        width: int=est.largura,
+        height: int=est.altura, 
 ) -> None:
     downloads_path = Path.home() / "Downloads"
     output_file = downloads_path / filename
