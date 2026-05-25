@@ -1,19 +1,65 @@
-# Clusterização aplicada a desastres naturais no Paraná
+# Setup
 
-- utils: pasta para definir informações globais à aplicação, como constantes e tipos criados para propósitos específicos.
-- core: pasta onde os principais processamentos de dados serão feitos.
+Este projeto usa a versão Python 3.12.3 .
 
+Clone o repositório.
+```bash
+git clone https://github.com/gustavoalarcao/clustering_parana
+```
 
-Acompanhamento:
-- Instale o Git no computador
-- Instale o Python (3.13+) no computador
-- Copie o link desta página
-- No terminal de um editor de código, execute:
-    - git clone LINK_DA_PAGINA.git
-- Entre na pasta do projeto recém-criada, no mesmo terminal:
-    - cd NOME_DA_PASTA
-- Instalando as dependências, no mesmo terminal:
-    - Windows:
-        - pip install -r requirements.txt
-    - Linux:  
-        - pip3 install -r requirements.txt
+## Ubuntu / Debian 
+
+Em uma pasta, crie e ative um ambiente virtual.
+```bash
+cd projeto_clusterizacao_parana
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Instale as dependências do projeto.
+```bash
+pip3 install -r requirements.txt
+```
+
+Para ver as análises (com o ambiente virtual ativado), execute:
+```bash
+streamlit run main.py
+```
+
+## MacOS
+
+Em uma pasta, crie e ative um ambiente virtual.
+```bash
+cd projeto_clusterizacao_parana
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Instale as dependências do projeto.
+```bash
+pip3 install -r requirements.txt
+```
+
+Para ver as análises (com o ambiente virtual ativado), execute:
+```bash
+streamlit run main.py
+```
+
+## Windows
+
+Em uma pasta, crie e ative um ambiente virtual.
+```bash
+cd projeto_clusterizacao_parana
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Instale as dependências do projeto.
+```bash
+pip install -r requirements.txt
+```
+
+Para ver as análises (com o ambiente virtual ativado), execute:
+```bash
+streamlit run main.py
+```
