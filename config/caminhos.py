@@ -1,0 +1,1 @@
+arquivo_ocorrencia_desastres = 'dados/originais/ocorrencias_10_24.csv'

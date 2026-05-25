@@ -1,22 +1,21 @@
-
+import numpy as np
 import streamlit as st
-from streamlit import session_state as ss
-from streamlit import write
+from streamlit import write, session_state as ss
 
 
-from core.coletando_dados import *
-from core.analise_primaria import *
+import config.caminhos as cam
 
-from utils.constantes import *
-from utils.plotly_template import *
+from coleta.dados_impacto_proporcional import coletando_ocorrencias_de_desastres
+
+from processamento.impacto_proporcional import gerando_grafico_de_barras_impacto_proporcional
+
 from utils.auxiliar_plotagem import *
-from utils.mapa_parana import *
 
 
 
 
 def pg_impacto_proporcional() -> None:
-    df_desastres = coletando_ocorrencias_de_desastres(arquivo_ocorrencia_desastres)
+    df_desastres = coletando_ocorrencias_de_desastres(cam.arquivo_ocorrencia_desastres)
     # df_desastres
     # df_desastres.dtypes
 

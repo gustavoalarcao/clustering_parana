@@ -1,7 +1,10 @@
-import plotly.graph_objects as go
 import pandas as pd
+import plotly.graph_objects as go
+
 
 from utils.plotly_template import template
+
+
 
 
 def gerando_grafico_de_barras_impacto_proporcional(s: pd.Series) -> go.Figure:

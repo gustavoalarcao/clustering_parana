@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 
-from .constantes import *
+import utils.constantes as cte
 
 
 template = go.layout.Template()
@@ -17,17 +17,17 @@ template.layout = dict(
         title=dict(
             font=dict(
                 size=14,
-                color=color
+                color=cte.cor_principal
             ),
             standoff=10,
         ),
         tickfont=dict(
             size=10,
-            color=color
+            color=cte.cor_principal
         ),
 
-        gridcolor=color,
-        linecolor=color,
+        gridcolor=cte.cor_principal,
+        linecolor=cte.cor_principal,
     ),
     yaxis=dict(
         showgrid=False,
@@ -43,15 +43,15 @@ template.layout = dict(
         ),
         tickfont=dict(
             size=10,
-            color=color
+            color=cte.cor_principal
         ),
 
-        gridcolor=color,
-        linecolor=color, 
+        gridcolor=cte.cor_principal,
+        linecolor=cte.cor_principal, 
     ),
     margin=dict(t=30,b=60,r=60,l=60),
     paper_bgcolor='white',
     plot_bgcolor='white',
-    width=w,
-    height=h,
+    width=cte.largura,
+    height=cte.altura,
 )

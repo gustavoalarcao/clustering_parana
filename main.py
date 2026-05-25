@@ -15,14 +15,16 @@ from streamlit import session_state as ss
 st.set_page_config(layout='wide')
 
 
-from paginas.impacto_proporcional import pg_impacto_proporcional
+from paginas.pg_impacto_proporcional import pg_impacto_proporcional
+from paginas.pg_serie_historica_s2id import pg_serie_historica_s2id
 
 
 
 
 pg_1 = st.Page(pg_impacto_proporcional)
+pg_2 = st.Page(pg_serie_historica_s2id)
 
-pg = st.navigation([pg_1])
+pg = st.navigation([pg_1, pg_2])
 pg.run()
 
 

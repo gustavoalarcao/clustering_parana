@@ -3,7 +3,7 @@ import streamlit as st
 
 from pathlib import Path
 
-from .constantes import w, h
+import utils.constantes as cte
 
 
 
@@ -11,8 +11,8 @@ from .constantes import w, h
 def baixar_grafico( 
         plot: go.Figure, 
         filename: str, 
-        height: int=h, 
-        width: int=w
+        width: int=cte.largura,
+        height: int=cte.altura, 
 ) -> None:
     downloads_path = Path.home() / "Downloads"
     output_file = downloads_path / filename

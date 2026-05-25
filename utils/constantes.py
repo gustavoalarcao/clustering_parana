@@ -1,15 +1,11 @@
-# Arquivos.
-arquivo_ocorrencia_desastres = 'dados/ocorrencias_10_24.csv'
-
-
 # Estilos.
-color = '#000000'
-scolor = "#003366"
-tcolor = "#CF3C3C"
-qcolor = "#3fdc93"
-noise_color = "rgba(238, 191, 81, 0.4)"
+cor_principal = '#000000'
+cor_secundaria = "#003366"
+cor_terciaria = "#CF3C3C"
+cor_quaternaria = "#3fdc93"
+cor_para_ruido = "rgba(238, 191, 81, 0.4)"
 
 
 # Informações para gráficos.
-w: float = 624
-h: float = 300
+largura: float = 624
+altura: float = 300

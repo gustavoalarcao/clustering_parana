@@ -2,7 +2,7 @@ import plotly.graph_objects as go
 
 from utils.plotly_template import template
 
-from core.coletando_dados import *
+from coleta.dados_impacto_proporcional import *
 
 
 def gerando_mapa_parana(geo_json) -> go.Figure:

@@ -40,7 +40,8 @@ Mude para a pasta do projeto:
 cd clustering_parana
 ```
 
-Ative o ambiente virtual:
+Nunca esqueça de ativar o ambiente virtual, caso contrário na hora de instalar as 
+dependências após uma atualização, o download será feito no seu computador. Ative o ambiente virtual:
 ```bash
 # Ubuntu / Debian / MacOS
 source .venv/bin/activate
@@ -54,10 +55,21 @@ Para visualizar as análises ativas, execute:
 streamlit run main.py
 ```
 
-Conforme o projeto avança, você precisará baixar as atualizações mais recentes. Para fazer isso, abra o terminal e execute:
-
+Conforme o projeto avança, você precisará baixar as atualizações mais recentes. 
+Para fazer isso, abra o terminal e execute:
 ```bash
 cd clustering_parana
 git pull
+```
 
+Pode ser que depois de uma atualização novas dependências tenham sido adicionadas, logo
+será necessário instalar as novas dependências. É possível monitorar isso pela data de edição do 
+arquivo `requirements.txt`. Caso tenha sido editado antes depois da última atualização, execute:
+```bash
+# Ubuntu / Debian / MacOS
+pip3 install -r requirements.txt
+
+# Windows
+pip install -r requirements.txt
+```
 
