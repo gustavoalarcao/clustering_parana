@@ -15,14 +15,14 @@ from streamlit import session_state as ss
 st.set_page_config(layout='wide')
 
 
-from paginas.pg_impacto_proporcional import pg_impacto_proporcional
+from paginas.pg_maj_daniel import pg_maj_daniel
 from paginas.pg_serie_historica_s2id import pg_serie_historica_s2id
 from paginas.pg_atlas import pg_atlas
 
 
 
 
-pg_1 = st.Page(pg_impacto_proporcional)
+pg_1 = st.Page(pg_maj_daniel)
 pg_2 = st.Page(pg_serie_historica_s2id)
 pg_3 = st.Page(pg_atlas)
 

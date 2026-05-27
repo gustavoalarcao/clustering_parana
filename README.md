@@ -46,6 +46,25 @@ pip3 install -r requirements.txt
 pip install -r requirements.txt
 ```
 
+Crie a pasta de dados:
+```bash
+# Ubuntu / Debian / MacOS
+python3 -m config.criar_pasta_de_dados
+
+# Windows
+python -m config.criar_pasta_de_dados
+```
+e adicione os arquivos do drive em "dados/brutos".
+
+Para executar as transformações nos arquivos execute:
+```bash
+# Ubuntu / Debian / MacOS
+python3 -m processamento.executar_pipeline
+
+# Windows
+python -m processamento.executar_pipeline
+```
+
 
 # Acompanhamento do projeto
 
@@ -85,5 +104,15 @@ pip3 install -r requirements.txt
 
 # Windows
 pip install -r requirements.txt
+```
+
+Além do mais, pode ser necessário adicionar mais arquivos do drive em "dados/brutos".
+E, na sequência processar estes arquivos com:
+```bash
+# Ubuntu / Debian / MacOS
+python3 -m processamento.executar_pipeline
+
+# Windows
+python3 -m processamento.executar_pipeline
 ```
 
