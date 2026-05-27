@@ -113,6 +113,6 @@ E, na sequência processar estes arquivos com:
 python3 -m processamento.executar_pipeline
 
 # Windows
-python3 -m processamento.executar_pipeline
+python -m processamento.executar_pipeline
 ```
 
