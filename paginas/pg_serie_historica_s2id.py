@@ -4,7 +4,7 @@ from streamlit import write, session_state as ss
 
 from config.caminhos import arquivo_serie_hitorica_2016
 
-from coleta.dados_serie_historica_s2id import extraindo_dados_serie_historica_s2id
+from coleta.coleta_serie_historica_s2id import extraindo_dados_serie_historica_s2id
 
 
 

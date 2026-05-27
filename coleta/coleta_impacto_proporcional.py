@@ -4,9 +4,9 @@ import numpy as np
 
 
 
-def coletando_ocorrencias_de_desastres(caminho) -> pd.DataFrame:
+def coletando_ocorrencias_de_desastres(caminho_do_arquivo) -> pd.DataFrame:
     return pd.read_csv(
-        caminho, 
+        caminho_do_arquivo, 
         sep=';', 
         thousands='.', 
         decimal=','

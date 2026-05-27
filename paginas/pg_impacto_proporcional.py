@@ -5,11 +5,11 @@ from streamlit import write, session_state as ss
 
 import config.caminhos as cam
 
-from coleta.dados_impacto_proporcional import coletando_ocorrencias_de_desastres
+from coleta.coleta_impacto_proporcional import coletando_ocorrencias_de_desastres
 
 from processamento.impacto_proporcional import gerando_grafico_de_barras_impacto_proporcional
 
-from utils.auxiliar_plotagem import *
+from utils.auxiliar_plotagem import mostrar_grafico
 
 
 

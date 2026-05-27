@@ -1,8 +1,22 @@
+# Sobre o Git
+
+Para clonar o repositório é necessário ter o Git instalado no computador. No site da plataforma
+eles tem tutoriais sobre como fazer isso em cada sistema operacional.
+
+Caso seja a primeira vez usando Git no computador, será necessário definir um nome de usuário:
+```bash
+git config --global user.name "Seu Nome"
+```
+e um e-mail:
+```bash
+git config --global user.email "seu.email@exemplo.com"
+```
+
 # Configuração Inicial
 
 Este projeto usa a versão Python 3.12.3 .
 
-Clone o repositório (é necessário ter o Git instalado no computador):
+Clone o repositório:
 ```bash
 git clone https://github.com/gustavoalarcao/clustering_parana
 ```
