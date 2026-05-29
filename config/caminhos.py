@@ -7,3 +7,6 @@ arquivo_alterado_serie_historica_2016 = 'dados/alterados/serie_historica_2016.cs
 
 arquivo_bruto_atlas = 'dados/brutos/dados_atlas.xlsx'
 arquivo_alterado_atlas = 'dados/alterados/dados_atlas.csv'
+
+
+arquivo_bruto_ips_2026 = 'dados/brutos/dados_ips_2026.csv'

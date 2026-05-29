@@ -1,3 +1,22 @@
+# Arquitetura do projeto
+
+No diretório raiz ficam o arquivo explicatório do projeto (README.md), a lista de dependências 
+(requirements.txt), o arquivo com as especificações de arquivos para não serem monitorados pelo projeto 
+(.gitignore) e o arquivo executável que reúne os resultados obtidos ao longo dos outros subdiretórios do 
+projeto (main.py).
+
+No diretório "utils" ficam auxiliadores para o projeto como tipos, funções e estilos. E em ".streamlit" ficam
+as configurações da aplicação.
+
+Os dados brutos ficam armazenados em "dados/brutos" e passam pelo diretório "processamento". Se necessário, 
+eles passarão por processos de estruturação e uma cópia será armazenada em "dados/alterados". A partir daí,
+lida-se com a leitura dos dados em "coleta".
+
+Em "config", ficam os caminhos de arquivos e URLs, além de um script para criar a pasta de dados 
+(nunca é enviada ao repositório Git) e outro para executar as tranformações nos arquivos.
+
+A partir destes dados, executa-se análises ("analise") que depois serão organizadas em páginas ("paginas").
+
 # Sobre o Git
 
 Para clonar o repositório é necessário ter o Git instalado no computador. No site da plataforma
