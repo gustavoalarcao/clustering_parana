@@ -5,7 +5,8 @@ from utils.decoradores import marcar_tempo_de_execucao
 
 
 
-marcar_tempo_de_execucao()
+
+@marcar_tempo_de_execucao() 
 def processando_serie_historica_2016(arquivo_inicial, arquivo_final) -> None:
     df = pd.read_excel(arquivo_inicial)
 

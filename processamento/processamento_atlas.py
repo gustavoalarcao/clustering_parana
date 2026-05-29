@@ -6,7 +6,7 @@ from utils.decoradores import marcar_tempo_de_execucao
 
 
 
-@marcar_tempo_de_execucao()
+@marcar_tempo_de_execucao() 
 def processando_arquivo_atlas(arquivo_inicial, arquivo_final) -> None:
     df = pd.read_excel(arquivo_inicial)
 
