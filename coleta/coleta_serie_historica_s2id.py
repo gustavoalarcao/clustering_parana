@@ -1,9 +1,10 @@
 import pandas as pd
 
 
+from config.caminhos import arquivo_alterado_serie_historica_2016
 
 
-def extraindo_dados_serie_historica_s2id(caminho):
-    return pd.read_excel(
-        io=caminho,
-    )
+
+
+def coletando_dados_serie_historica_s2id():
+    return pd.read_csv(arquivo_alterado_serie_historica_2016)

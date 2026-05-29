@@ -18,16 +18,19 @@ st.set_page_config(layout='wide')
 from paginas.pg_maj_daniel import pg_maj_daniel
 from paginas.pg_serie_historica_s2id import pg_serie_historica_s2id
 from paginas.pg_atlas import pg_atlas
+from paginas.pg_ips import pg_ips
 
 
 
+paginas = [
+    st.Page(pg_maj_daniel),
+    st.Page(pg_serie_historica_s2id),
+    st.Page(pg_atlas),
+    st.Page(pg_ips),
+]
 
-pg_1 = st.Page(pg_maj_daniel)
-pg_2 = st.Page(pg_serie_historica_s2id)
-pg_3 = st.Page(pg_atlas)
 
-
-pg = st.navigation([pg_1, pg_2, pg_3])
+pg = st.navigation(paginas)
 pg.run()
 
 

@@ -37,7 +37,7 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-Instale as dependências do projeto:
+Instale as dependências do projeto no ambiente virtual:
 ```bash
 # Ubuntu / Debian / MacOS
 pip3 install -r requirements.txt
@@ -59,10 +59,10 @@ e adicione os arquivos do drive em "dados/brutos".
 Para executar as transformações nos arquivos execute:
 ```bash
 # Ubuntu / Debian / MacOS
-python3 -m processamento.executar_pipeline
+python3 -m config.estruturar_dados
 
 # Windows
-python -m processamento.executar_pipeline
+python -m config.estruturar_dados
 ```
 
 
@@ -73,8 +73,7 @@ Mude para a pasta do projeto:
 cd clustering_parana
 ```
 
-Nunca esqueça de ativar o ambiente virtual, caso contrário na hora de instalar as 
-dependências após uma atualização, o download será feito no seu computador. Ative o ambiente virtual:
+Ative o ambiente virtual:
 ```bash
 # Ubuntu / Debian / MacOS
 source .venv/bin/activate
@@ -82,6 +81,8 @@ source .venv/bin/activate
 # Windows
 .venv\Scripts\activate
 ```
+nunca se esqueça de ativar o ambiente virtual, caso contrário na hora de instalar as 
+dependências após uma atualização, o download será feito no seu computador. 
 
 Para visualizar as análises ativas, execute:
 ```bash
